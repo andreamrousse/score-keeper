@@ -6,12 +6,16 @@ const teamAScoreNumber = document.getElementById("score-number-a");
 const teamBScoreNumber = document.getElementById("score-number-b");
 const minusButtonA = document.getElementById("minus-button-a");
 const minusButtonB = document.getElementById("minus-button-b");
+const resetButtonA = document.getElementById("reset-button-a");
+const resetButtonB = document.getElementById("reset-button-b");
 
 function updateDisplay() {
   teamAScoreNumber.textContent = teamAScore;
   teamBScoreNumber.textContent = teamBScore;
   minusButtonA.disabled = teamAScore === 0;
   minusButtonB.disabled = teamBScore === 0;
+  resetButtonA.disabled = teamAScore === 0;
+  resetButtonB.disabled = teamBScore === 0;
 }
 
 function saveScores() {
