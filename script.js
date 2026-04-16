@@ -2,12 +2,12 @@ let teamAScore = 0;
 let teamBScore = 0;
 const STORAGE_KEY = "scoreKeeperScores";
 
-const scoreAElement = document.getElementById("score-a");
-const scoreBElement = document.getElementById("score-b");
+const teamAScoreNumber = document.getElementById("score-number-a");
+const teamBScoreNumber = document.getElementById("score-number-b");
 
 function updateDisplay() {
-  scoreAElement.textContent = teamAScore;
-  scoreBElement.textContent = teamBScore;
+  teamAScoreNumber.textContent = teamAScore;
+  teamBScoreNumber.textContent = teamBScore;
 }
 
 function saveScores() {
@@ -64,10 +64,10 @@ function decrementTeamB() {
   saveScores();
 }
 
-document.getElementById("increment-a").addEventListener("click", incrementTeamA);
-document.getElementById("decrement-a").addEventListener("click", decrementTeamA);
-document.getElementById("increment-b").addEventListener("click", incrementTeamB);
-document.getElementById("decrement-b").addEventListener("click", decrementTeamB);
+document.getElementById("plus-button-a").addEventListener("click", incrementTeamA);
+document.getElementById("minus-button-a").addEventListener("click", decrementTeamA);
+document.getElementById("plus-button-b").addEventListener("click", incrementTeamB);
+document.getElementById("minus-button-b").addEventListener("click", decrementTeamB);
 
 loadScores();
 updateDisplay();

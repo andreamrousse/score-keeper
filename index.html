@@ -7,19 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section id="team-a">
-    <h2>Gryffindor</h2>
-    <p>Score: <span id="score-a">0</span></p>
-    <button id="decrement-a" type="button">-</button>
-    <button id="increment-a" type="button">+</button>
-  </section>
+  <main class="scoreboard-screen">
+    <section id="team-card-a" class="team-card">
+      <h2 class="team-title">Gryffindor</h2>
+      <p class="score-label">Score: <span id="score-number-a" class="score-number">0</span></p>
+      <button id="minus-button-a" class="score-button minus-button" type="button">-</button>
+      <button id="plus-button-a" class="score-button plus-button" type="button">+</button>
+    </section>
 
-  <section id="team-b">
-    <h2>Slytherin</h2>
-    <p>Score: <span id="score-b">0</span></p>
-    <button id="decrement-b" type="button">-</button>
-    <button id="increment-b" type="button">+</button>
-  </section>
+    <section id="team-card-b" class="team-card">
+      <h2 class="team-title">Slytherin</h2>
+      <p class="score-label">Score: <span id="score-number-b" class="score-number">0</span></p>
+      <button id="minus-button-b" class="score-button minus-button" type="button">-</button>
+      <button id="plus-button-b" class="score-button plus-button" type="button">+</button>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
