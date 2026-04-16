@@ -173,12 +173,13 @@ body::before {
   font-size: var(--font-size-label);
   color: var(--color-text-secondary);
   letter-spacing: var(--letter-spacing-label);
+  text-align: center;
 }
 
 .score-number {
   display: inline-block;
   min-width: var(--size-score-min-width);
-  margin-left: var(--space-xxs);
+  margin-left: 0;
   font-size: var(--font-size-score);
   font-weight: var(--font-weight-bold);
   color: var(--color-score);
